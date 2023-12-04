@@ -104,10 +104,10 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
     default_model = api.get_default_llm_model()[0]
 
     if not chat_box.chat_inited:
-        st.toast(
-            f"欢迎使用 [`Research Bot`] ! \n\n"
-            f"当前运行的模型`{default_model}`, 您可以开始提问了."
-        )
+        # st.toast(
+        #     f"欢迎使用 [`Research Bot`] ! \n\n"
+        #     f"当前运行的模型`{default_model}`, 您可以开始提问了."
+        # )
         chat_box.init_session()
 
     # 弹出自定义命令帮助信息
