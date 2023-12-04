@@ -141,8 +141,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
                         "知识库问答",
                         "文件对话",
                         "LLM 对话",
-                        "搜索引擎问答",
                         "自定义Agent问答",
+                        "搜索引擎问答",
                         ]
         dialogue_mode = st.selectbox("请选择对话模式：",
                                      dialogue_modes,
